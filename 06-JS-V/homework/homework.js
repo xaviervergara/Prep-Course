@@ -66,7 +66,7 @@ class Persona {
         Nombre: this.nombre,
         Apellido: this.apellido,
         Edad: this.edad,
-        Domicilio: this.domicilio,
+        Domicilio: this.domiclio,
       };
     };
   }
