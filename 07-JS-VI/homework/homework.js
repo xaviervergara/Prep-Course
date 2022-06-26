@@ -53,5 +53,5 @@ module.exports = {
   sumarArray,
   forEach,
   map,
-  filter
+  filter,
 };
