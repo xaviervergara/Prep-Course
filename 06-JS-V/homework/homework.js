@@ -36,11 +36,11 @@ function agregarStringInvertida() {
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
   String.prototype.reverse = function () {
-    var reverseString = "";
+    var hola = "";
     for (i = this.length - 1; i >= 0; i--) {
-      reverseString += this[i];
+      hola += this[i];
     }
-    return reverseString;
+    return hola;
   };
 }
 
