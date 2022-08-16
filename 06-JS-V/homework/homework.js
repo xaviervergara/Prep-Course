@@ -37,7 +37,6 @@ function agregarStringInvertida() {
   // Ej: 'menem'.reverse() => menem
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
-
   String.prototype.reverse = function () {
     var reverseString = "";
     for (i = this.length - 1; i >= 0; i--) {
@@ -46,6 +45,7 @@ function agregarStringInvertida() {
     return reverseString;
   };
 }
+
 // ---------------------------------------------------------------------------//
 //Crea el constructor de la clase "Persona"
 //Debe tener las propiedades: "nombre", "apellido", "edad" y "domicilio"
@@ -59,13 +59,18 @@ function agregarStringInvertida() {
 
 class Persona {
   constructor(nombre, apellido, edad, domicilio) {
-    (this.nombre = nombre),
-      (this.apellido = apellido),
-      (this.edad = edad),
-      (this.domicilio = domicilio);
-  }
-  detalle() {
-    return new Persona(this.nombre, this.apellido, this.edad, this.domicilio);
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.edad = edad;
+    this.domicilio = domicilio;
+    this.detalle = function () {
+      return {
+        Nombre: this.nombre,
+        Apellido: this.apellido,
+        Edad: this.edad,
+        Domicilio: this.domiclio,
+      };
+    };
   }
 }
 
