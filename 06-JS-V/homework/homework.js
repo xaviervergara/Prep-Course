@@ -1,5 +1,7 @@
 // No cambies los nombres de las funciones.
 
+const { arrayReplaceAt } = require("markdown-it/lib/common/utils");
+
 function crearUsuario() {
   // Crea una Clase de ES6 o una función constructor llamada "Usuario"
   // Debe aceptar un objeto "opciones" con las propiedades "usuario", "nombre", "email" y "password"
@@ -81,6 +83,7 @@ function agregarMetodo() {
   Persona.prototype.datos = function () {
     return this.nombre + ", " + this.edad + " años";
   };
+  
 }
 
 // No modificar nada debajo de esta línea
